@@ -12,13 +12,15 @@
 </head>
 
 <body>
+
     <div class="add-course">
         <div class="container">
             <h1>CRUD System</h1>
             <form action="">
                 <div class="mb-3">
                     <label for="">course name <span class="text-danger">*</span> </label>
-                    <input class="inputs form-control" type="text" placeholder="cource name" id="courseName">
+                    <input class="  inputs form-control" type="text" placeholder="cource name" id="courseName">
+                    <p id="name-error" class=" text-danger"></p>
                 </div>
                 <label for="">course category</label>
                 <input class="inputs form-control" type="text" placeholder="cource category" id="courseCategory">
@@ -30,7 +32,7 @@
                 <label for="">course capacity</label>
                 <input class="inputs form-control" type="number" placeholder="cource capacity" id="courseCapacity">
 
-                <input type="submit" value="Add Course" class="btn btn-outline-secondary mt-3"  id="click" />
+                <input type="submit" value="Add Course" disabled class="btn btn-outline-secondary mt-3"  id="click" />
                 <button class="btn btn-outline-secondary mt-3" type="reset" id="resetbtn">clear</button>
             </form>
         </div>
@@ -62,9 +64,8 @@
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-
-    <script src="main.js"></script>
     <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
-
+    <script src="main.js"></script>
 </body>
